@@ -43,4 +43,5 @@ def hangman(word):
             clear("B")
             put_text("You guessed your word correctly",scope="B").style('font-size:40px')
             break
-hangman(word)
+if __name__=='__main__':           
+    hangman(word)
