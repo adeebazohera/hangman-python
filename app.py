@@ -8,6 +8,7 @@ pywebio.config(css_style="* { background-color:#FFDAE9 }",title="Hangman",theme=
 put_text("Hangman game").style('color: #E0B0FF; font-size: 60px')
 words=["adeeba","file","carpool","print","chocolate","python","where"]
 word = random.choice(words)
+@app.route("/")
 def hangman(word):
     l1 = ["." for _ in range(len(word))]
     put_text("Your word is:").style('font-size:40px')
